@@ -45,3 +45,19 @@ See the [LICENSE](LICENSE) file for details.
 ## Citation
 If you use this code in your research, please cite the corresponding paper:
 
+```bibtex
+@Article{alipeksensors2026,
+AUTHOR = {Alipek, Sercan and Kexel, Christian and Moll, Jochen},
+TITLE = {Explainable Machine Learning for Tower-Radar Monitoring of Wind Turbine Blades: Fine-Grained Blade Recognition Under Changing Operational Conditions},
+JOURNAL = {Sensors},
+VOLUME = {26},
+YEAR = {2026},
+NUMBER = {4},
+ARTICLE-NUMBER = {1083},
+ISSN = {1424-8220},
+DOI = {https://doi.org/10.3390/s26041083}
+}
+```
+
+## Funding
+This research was funded by the BMWK (German Federal Ministry for Economic Affairs and Climate Action) under the grant number 03EE2035A.
