@@ -1,0 +1,14 @@
+# # # Configuration for finetuning
+run_name_opt: "transfer_location_train_vb06"
+model_pth: "final_weights.pth"
+
+n_metadata_fine: null
+n_classes: 3
+epochs_fine: 12
+checkpointing_fine: "False"
+name_optim_fine: "Adam"
+lr_fine: 0.0001
+momentum_fine: null
+eval_val_fine: "True"
+eval_train_fine: "True"
+eval_test_fine: "True"

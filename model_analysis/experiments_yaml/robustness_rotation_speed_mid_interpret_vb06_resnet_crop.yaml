@@ -1,0 +1,56 @@
+# # # Configuration for dataloader preparation
+batch_size: 1
+num_workers: 2
+start_date: null
+end_date: null
+#start_date: "2022-12-06"
+#end_date: "2023-03-02"
+dataset_tag: "vb06"
+csv_path_data: "complete_triples_vb06_full_sorted_remote.csv"
+csv_overview_data: "overview_data_vb06.csv"
+csv_path_data_filtered: "complete_triples_vb06_filtered_remote.csv"
+csv_overview_data_filtered: "overview_data_vb06_filtered.csv"
+partition_ratios: [0.6, 0.2]  # You only need train and val ratio. Test ratio is computed from subtraction.
+numpy_random_seed: 42  # Shuffle the indices of the DataFrame before partitioning
+torch_seed: 42  # Set seed locally for deterministic DataLoader shuffle
+
+# NOTE: Provide non-empty filter conditions (value_*, interval_*, diff_*) if metadata_statistics = True
+# because start_date & end_date is narrowing down the data after the metadata statistics are computed!
+metadata_statistics: null
+hist_metadata_artifacts: null
+hist_bins: [50, 50, 50, 50, 50, 50, 30, 300]
+parameter_dir_names: ["outside_temperature", "nacelle_orientation", "pitch_angle",
+                      "rotation_speed", "wind_speed", "wind_direction"]
+parameter_csv_keys: ["outside_temperature", "nacelle_orientation", "pitch_angle",
+                     "rotation_speed", "wind_speed", "wind_direction",
+                     "label", "label_quality", "metadata_version"]
+
+value_conditions:
+  null
+#  label: "ROT2"
+
+interval_conditions:
+  rotation_speed: [9.5, 11.5]
+  nacelle_orientation: [200, 270]
+  outside_temperature: [0, 25]
+  pitch_angle: [-2.5, -1.5]
+  wind_direction: [150, 300]
+  wind_speed: [700, 800]
+
+diff_conditions:
+  null
+#  [["nacelle_orientation", "wind_direction", 50]]
+
+data_augmentation: null
+radar_format: "linear"
+plot_format: "log_norm"
+clean_spots: null
+
+# # # Configuration for model activation visualization
+run_name_opt: "robustness_rotation_speed_low_and_high_train_vb06_resnet_18_tv_crop"
+model_pth: "final_weights.pth"
+
+n_metadata: null
+n_classes: 3
+n_batches: 50
+ground_truth_or_all: "all"

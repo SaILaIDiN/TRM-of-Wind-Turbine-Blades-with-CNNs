@@ -1,0 +1,9 @@
+# # # Configuration for inference without finetuning
+run_name_opt: "robustness_rotation_speed_low_and_high_train_vb06_resnet_18_tv_crop"
+model_pth: "final_weights.pth"
+
+n_metadata: null
+n_classes: 3
+best_epoch: 40  # Best epoch is the epoch number of the used model_pth, required to name results properly
+mode: "Inference"
+log_via_mlflow: "True"

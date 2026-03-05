@@ -1,0 +1,11 @@
+# # # Configuration for optimization
+n_metadata: null
+n_classes: 3
+epochs: 40
+checkpointing : "False"
+name_optim: "Adam"
+lr: 0.0001
+momentum: null
+eval_val: "True"
+eval_train: "True"
+eval_test: "True"
