@@ -13,6 +13,7 @@ class WindTurbineModel(nn.Module):
         self.bn3 = nn.BatchNorm2d(32)
         self.pool = nn.MaxPool2d(kernel_size=2, stride=2)
         self.fc1 = nn.Linear(32 * 99 * 31, 128)
+        n_metadata = 0 if n_metadata is None else n_metadata
         self.fc2 = nn.Linear(128 + n_metadata, n_classes)
         self.relu = nn.ReLU()
 

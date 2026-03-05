@@ -20,9 +20,9 @@ def setup_environment(system_mode="local-H-Drive"):
         os.environ['MLRUNS_LOCAL'] = \
             r"C:\github\TRM-of-Wind-Turbine-Blades-with-CNNs\mlruns"
         os.environ['CODE_PATH_OPTIMISE'] = \
-            r"C:\github\TRM-of-Wind-Turbine-Blades-with-CNNs\model_optim"
+            r"C:\github\TRM-of-Wind-Turbine-Blades-with-CNNs\model_optim\experiments_script"
         os.environ['CODE_PATH_ANALYSIS'] = \
-            r"C:\github\TRM-of-Wind-Turbine-Blades-with-CNNs\model_analysis"
+            r"C:\github\TRM-of-Wind-Turbine-Blades-with-CNNs\model_analysis\experiments_script"
         os.environ['YAML_PATH_OPTIMISE'] = \
             r"C:\github\TRM-of-Wind-Turbine-Blades-with-CNNs\model_optim\experiments_yaml"
         os.environ['YAML_PATH_ANALYSIS'] = \
@@ -49,9 +49,9 @@ def setup_environment(system_mode="local-H-Drive"):
         os.environ['MLRUNS_LOCAL'] = \
             "/home/user/projects/TRM-of-Wind-Turbine-Blades-with-CNNs/mlruns"
         os.environ['CODE_PATH_OPTIMISE'] = \
-            "/home/user/projects/TRM-of-Wind-Turbine-Blades-with-CNNs/model_optim"
+            "/home/user/projects/TRM-of-Wind-Turbine-Blades-with-CNNs/model_optim/experiments_script"
         os.environ['CODE_PATH_ANALYSIS'] = \
-            "/home/user/projects/TRM-of-Wind-Turbine-Blades-with-CNNs/model_analysis"
+            "/home/user/projects/TRM-of-Wind-Turbine-Blades-with-CNNs/model_analysis/experiments_script"
         os.environ['YAML_PATH_OPTIMISE'] = \
             "/home/user/projects/TRM-of-Wind-Turbine-Blades-with-CNNs/model_optim/experiments_yaml"
         os.environ['YAML_PATH_ANALYSIS'] = \
