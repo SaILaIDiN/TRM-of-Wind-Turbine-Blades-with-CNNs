@@ -26,17 +26,19 @@ The repository provides:
 
 Researchers with access to comparable radargram data can reproduce the experiments by following the documented data structure.
 
+## Model weights
+A selection of weight files from CNN models trained with radargrams of wind turbine blades can be found in [Zenodo](https://zenodo.org/records/18937969). 
+
 ## Requirements
 The code was developed and tested using:
-* Python >= 3.10
+* python >= 3.10
 * PyTorch 2.1.0
 * CUDA 12.1
 * timm 1.0.9
 * albumentations 1.4.15
-* Numpy
-* matplotlib
-
-All required packages are listed in [requirements.txt](requirements.txt).
+* mlflow 2.14.1
+* numpy 1.26.4
+* matplotlib 3.8.4
 
 ## License
 This paper is released under the **MIT License**.
